@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: blue; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Loan Report</h1>
+    <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        {% for key, value in data.items %}
+        <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
